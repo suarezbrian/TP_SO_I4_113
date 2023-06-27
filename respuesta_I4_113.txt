@@ -1,0 +1,41 @@
+A- ¿Qué color de fondo tiene su página en el TESTING ?
+Testing quedo con el fondo Azul
+
+B- ¿Qué color de fondo tiene su página en el DESARROLLO ?
+Desarrollo con el fondo amarillo.
+
+C- ¿Qué color de fondo tiene su página en el MASTER?
+Cuando se hizo el marge de testing y desarrollo al main, quedo el fondo con ambas propiedades.
+
+D- ¿Qué favicon quedó en el MASTER el de ALFA o el de BETA?
+Quedo el de BETA.
+
+cambios al unísono:
+
+18-ALFA en TESTING en el archivo index.html agrega un <p>apellido nombre fecha y
+hora </p>
+19-BETA en TESTING en el archivo index.html agrega un <p>apellido nombre fecha y
+hora </p>
+20-GAMMA en TESTING en el archivo index.html agrega un <p>apellido nombre fecha y
+hora </p>
+21- hacen los PUSH en el siguiente orden
+primero ALFA , despues BETA y por último GAMMA
+
+Pregunta:
+E- ¿Algún integrante tuvo problemas al hacer el push?
+Si beta tuvo problema al hacer el push, sin hacer un pull previo.
+
+F- ¿Qué problemas surgieron?
+Problema cuando se intento pushear sin hacer un fetch primero.
+
+G- ¿Qué soluciones pueden aplicar y cual seria la consecuencia de cada solución
+adoptada?
+Si estamos seguro que queremos hacer el cambio un push -f, pero perdemos los datos, o podemos hacer un pull o un fetch antes de hacer el cabio y luego pushear sin problemas.
+
+H- ¿Qué sucede si cada uno utiliza el push -f?
+Se fuerza el push y pisa todo lo que tenia previo a ese commit, con el nuevo contenido, es peligroso usar el -f por que podriamos perder datos.
+
+I- ¿Qué debo hacer para que el index.html tengas todos los <p> de los puntos 18,19 y 20
+en DESARROLLO ?
+
+Cuando alfa hacer el primer push. beta deberia hacer un fetch o un pull y luego pushear y gamma deberia hacer exactamente lo mismo para no generar errores.
